@@ -19,7 +19,7 @@ mongoose.connect(DB,{
 
 }).then(()=>console.log("DB connected Successfully"));
 
-const PORT= 3000;
+const PORT= process.env.PORT||3000;
 
 nextServer.prepare().then(()=>{
     app.get("*",(req,res)=>{
