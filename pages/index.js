@@ -90,6 +90,7 @@ const index = () => {
         const res=await axios({
           method: "PATCH",
           url: "/api/v1/user/buyMembership",
+          baseURL: "https://crypto-bot-backend.vercel.app/",
           withCredentials: true,
           data: {
             membershipType: membershipType,

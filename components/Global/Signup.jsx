@@ -25,6 +25,7 @@ const Signup = ({ axios, setActiveComponent, notifyError, notifySuccess }) => {
       const response=await axios({
         method:"POST",
         url: `/api/v1/user/signup`,
+        baseURL: "https://crypto-bot-backend.vercel.app/",
         withCredentials: true,
         data:{
           name: user.name,
