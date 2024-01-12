@@ -12,12 +12,12 @@ const app=require("./app");
 //DATABASE
 const DB=process.env.DATABASE.replace("<PASSWORD>",process.env.DATABASE_PASSWORD);
 
-mongoose.connect(DB,{
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
+// mongoose.connect(DB,{
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false,
 
-}).then(()=>console.log("DB connected Successfully"));
+// }).then(()=>console.log("DB connected Successfully"));
 
 const PORT= process.env.PORT||3000;
 

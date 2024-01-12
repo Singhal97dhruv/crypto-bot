@@ -23,6 +23,7 @@ const Login = ({ axios, setActiveComponent, notifyError, notifySuccess }) => {
       const response = await axios({
         method: "POST",
         url: `/api/v1/user/login`,
+        baseURL: "https://crypto-bot-backend.vercel.app/",
         withCredentials: true,
         data: {
           email: user.email,
